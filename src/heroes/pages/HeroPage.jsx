@@ -13,13 +13,15 @@ export const HeroPage = () => {
     navigate(-1);
   };
 
+  const heroImageUrl = `./heroes/${id}.jpg`; // usando github pages
+
   if (!hero) return <Navigate to="/marvel" />;
 
   return (
     <div className="row mt-5 animate__animated animate__fadeIn">
       <div className="col-4">
         <img
-          src={`./heroes/${hero.id}.jpg`}
+          src={heroImageUrl}
           alt={hero.superhero}
           className="img-thumbnail"
         />

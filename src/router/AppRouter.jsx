@@ -1,8 +1,4 @@
-import {
-  RouterProvider,
-  createBrowserRouter,
-  createHashRouter,
-} from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import { LoginPage } from '../auth';
 import { HeroesRoutes, childHeroesRoutes } from '../heroes';
 import { PrivateRoute } from './PrivateRoute';
